@@ -5,7 +5,6 @@ const choices = document.querySelectorAll(".choice");
 const message = document.getElementById('msg');
 const user_Score = document.querySelector("#user-score");
 const comp_Score = document.querySelector("#computer-score");
-const btn = document.querySelector("#btn");
 
 start = () => {
     if(userScore !=0 || compScore!=0){
@@ -65,8 +64,6 @@ const playGame = (userChoice) => {
         }
         showWinner(userWin,userChoice,compChoice);
     }
-
-
 }
 
 choices.forEach((choice) =>{
